@@ -10,9 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@remixicon/react": "^4.9.0",
     "@tailwindcss/vite": "^4.2.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-rnd": "^10.5.3",
+    "remixicon": "^4.9.1",
     "sass": "^1.99.0",
     "tailwindcss": "^4.2.2"
   },

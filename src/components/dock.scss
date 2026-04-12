@@ -1,0 +1,67 @@
+
+.dock{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    transition: all 0.26s ease;
+    z-index: 1001;
+
+    .dock-icon{
+        height: 2.5rem;
+        font-size: 0.5rem;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 0.6rem;
+
+        transition: all 0.26s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+
+    .dock-icon:hover{
+        cursor: pointer;
+        transform: scale(1.25) translateY(-20%);
+    }
+    .dock-icon:hover + .dock-icon{
+        transform: scale(1.1) translateY(-10%);
+    }
+    .dock-icon:has(+ .dock-icon:hover) {
+        transform: scale(1.1) translateY(-10%);
+    }
+
+
+    .github{
+        background-color: black;
+    }
+    .note{
+        background: linear-gradient(to bottom, #eb8510, #feb47b);
+    }
+    .pdf{
+        background: linear-gradient(to bottom, #ce310a, #fd6113);
+    }
+    .calendar{
+        background: linear-gradient(to bottom, #687bf6, #1f1ffa);
+    }
+    .spotify{
+        background: linear-gradient(to bottom, #1db954, #1ed760);
+    }
+    .mail{
+        background: linear-gradient(to bottom, #083492, #01347c);
+    }
+    .link{
+        background: linear-gradient(to bottom, #f877f6, #ef43e0);
+    }
+    .terminal{
+        background: black
+    }
+
+}
+.dock:has(.dock-icon:hover) {
+    gap: 0.5rem;
+}
