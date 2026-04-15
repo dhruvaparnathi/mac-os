@@ -2,13 +2,17 @@ import React from 'react'
 import './app.scss'
 import Dock from './components/Dock'
 import Navbar from './components/Navbar'
-import MacWindow from './windows/MacWindow'
+import Github from './windows/Github'
+import Note from './windows/Note'
+import PDF from './windows/PDF'
 
 const App = () => {
   return (
     <main>
       <Navbar />
-      <MacWindow />
+      <Github />
+      <Note />
+      <PDF />
       <Dock />
     </main>
   )

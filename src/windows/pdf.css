@@ -1,0 +1,8 @@
+.pdf-window {
+  height: 100%;
+  overflow: auto;
+}
+.pdf-window embed, .pdf-window iframe {
+  width: 100%;
+  height: 100%;
+}

@@ -28,7 +28,7 @@ const MacWindow = ({ children }) => {
             <div className="dot green"></div>
           </div>
           <div className="title">
-            <p>dhruvaparnathi - azs</p>
+            <p>dhruvaparnathi - zsh</p>
           </div>
         </div>
         <div className="content">{children}</div>

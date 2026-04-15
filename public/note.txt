@@ -1,0 +1,99 @@
+/**
+ * @file: profile.config.ts
+ * @author: Engineering Portfolio
+ * @summary: A high-performance full-stack engineer.
+ */
+
+// --------------------------------------------------
+// 1. CORE DEPENDENCIES & SKILLS
+// --------------------------------------------------
+
+const TECH_STACK = {
+  frontend: [
+    "React.js",    // 100%
+    "Next.js",     // 65%
+    "TailwindCSS", // 90%
+    "Three.js",    // 40%
+  ],
+  backend: [
+    "Node.js",     // 20%
+    "PostgreSQL",  // 25%
+    "Redis",       // 25%
+    "Docker",      // 20%
+  ],
+  tools: ["AWS", "Git", "Figma", "Linux"]
+};
+
+// --------------------------------------------------
+// 2. EXPERIENCE LOG (Reverse Chronological)
+// --------------------------------------------------
+
+class ProfessionalHistory {
+  
+  /** * CURRENT ROLE
+   * @period 2023 - Present 
+   */
+  public async TechFlow_Systems(): Promise<Impact> {
+    const role = "Self Assisted Full-Stack Engineer";
+    
+    // Key Achievements
+    const optimized = await view.optimize({ strategy: "Lazy Loading" });
+    const latencyReduction = "40%";
+    
+    const leadership = this.mentor(["me"]);
+    const architecture = "self architect -> Support View";
+    
+    return { role, optimized, architecture, leadership };
+  }
+
+  /** * PREVIOUS ROLE
+   * @period 2021 - 2023 => No Role/was Learning.
+   */
+  
+}
+
+// --------------------------------------------------
+// 3. COMPETITIVE ACHIEVEMENTS
+// --------------------------------------------------
+
+interface HackathonWin {
+  rank: number;
+  event: string;
+  project: string;
+}
+
+const trophyCabinet: HackathonWin[] = [
+  {
+    rank: -,
+    event: "Google Arcade Skill Boost",
+    project: "Learn Google Cloud",
+  },
+  {
+    rank: 500, // Top 500 Global
+    event: "Hackathon Vadodra 6.0",
+    project: "Language Agnostic Chatbot (Dynamic Programming)",
+  }
+];
+
+// --------------------------------------------------
+// 4. ACADEMIC BACKGROUND
+// --------------------------------------------------
+
+const education = new Map<string, string>([
+  ["Parul University", "B.Tech Computer Science & Engineering (7.3 CGPA)"],
+  ["SIGMA English School", "12th GSEB (66.7%)"]
+  ["EDU-World Global English School", "10th GSEB (87%)"]
+]);
+
+export default new ProfessionalHistory();
+
+
+```bash
+# TERMINAL OUTPUT
+# ---------------------------------------
+$ user --status
+> Status: Open to Opportunities
+> Location: Global / Remote
+> Loading Assets... [||||||||||] 100%
+> Ready.
+```

@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1717632463998-dc3ee6717d8d?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "title": "Mac - Operating System",
+        "description": "Mac Operating System demo for Portfolio that has Github, Terminal, Spotify, Calender, etc...",
+        "tags": ["React", "Rnd" ,"JavaScript", "SCSS"],
+        "repoLink": "https://github.com/dhruvaparnathi/mac-os",
+        "demoLink": ""
+    },
+    {
+      "id": 2,
+      "image": "https://images.unsplash.com/photo-1651055693398-0d66969cf759?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Transact - Finance Tracker",
+      "description": "A modern finance tracking web app built with React. Allows users to add, delete, and track expenses with local storage support and clean UI.",
+      "tags": ["React", "UseContext", "FormHandling" ,"JavaScript", "TailwindCSS", "LocalStorage"],
+      "repoLink": "https://github.com/dhruvaparnathi/transact",
+      "demoLink": "https://transact-your-transactions.netlify.app/"
+    },
+    {
+        "id": 3,
+        "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "title": "How I Learned React",
+        "description": "Contains mini-projects and web-designs that I made during my react journey.",
+        "tags": ["React", "JavaScript", "TailwindCSS", "useState", "useEffect"],
+        "repoLink": "https://github.com/dhruvaparnathi/How_i_Learned_React",
+        "demoLink": ""
+    },
+    {
+        "id": 4,
+        "image": "https://plus.unsplash.com/premium_photo-1722207562226-6f7c8125c13b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "title": "Productivity Web App",
+        "description": "Productivity app that supports draggable ToDo, daily planning, motivation, pomodoro timer, etc...",
+        "tags": ["JavaScript", "CSS" , "HTML"],
+        "repoLink": "https://github.com/dhruvaparnathi/productivity-web-app",
+        "demoLink": "https://productivity-site-app.netlify.app/"
+    },
+    {
+        "id": 5,
+        "image": "https://images.unsplash.com/photo-1545424273-4dd93a233016?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "title": "Image Filterer",
+        "description": "Helps you Edit image via filtering it in different forms.",
+        "tags": ["JavaScript", "Canvas" , "Filter" ,"CSS" , "HTML"],
+        "repoLink": "https://github.com/dhruvaparnathi/image-filterer",
+        "demoLink": "https://image-filterer.netlify.app/"
+    }
+
+]
