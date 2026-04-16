@@ -2,11 +2,16 @@ import React from 'react'
 import './pdf.scss'
 import MacWindow from './MacWindow'
 
-const PDF = () => {
+const PDF = ({windowName , windowState, setWindowState}) => {
   return (
-    <MacWindow>
+    <MacWindow windowName={windowName} windowState={windowState} setWindowState={setWindowState}>
         <div className="pdf-window">
-            <embed src="./dhruv_aparnathi_resume.pdf" type="" />
+            <embed
+  src="/dhruv_aparnathi_resume.pdf"
+  type="application/pdf"
+  width="100%"
+  height="100%"
+/>
             {/* <iframe src="./dhruv_aparnathi_resume.pdf" frameborder="0"></iframe> */}
         </div>
     </MacWindow>

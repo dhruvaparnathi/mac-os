@@ -3,9 +3,9 @@ import MacWindow from './MacWindow'
 import githubData from '../assets/github.json'
 import './github.scss'
 
-const Github = () => {
+const Github = ({windowName , windowState, setWindowState}) => {
   return (
-    <MacWindow>
+    <MacWindow windowName={windowName} windowState={windowState} setWindowState={setWindowState}>
       <div className='github-container'>
         {githubData.map((data) => (
           <div className='git-card' key={data.id}>

@@ -53,6 +53,9 @@
 
         .red{
             background-color: #ff5f56;
+            &:hover{
+                cursor: pointer;
+            }
         }
         .yellow{
             background-color: #ffbd2e;
@@ -77,7 +80,19 @@
 
 
 .content {
+    display: flex;
   flex: 1;
   overflow: auto;
   background: #121212;
+}
+.mac-window {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1;
+  overflow: auto;
+  height: 100%;
 }

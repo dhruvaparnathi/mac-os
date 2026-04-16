@@ -1,0 +1,59 @@
+.cli-container {
+  height: 100%;
+  width: 100%;
+
+  // Deep targeting to override library defaults
+  .custom-terminal {
+    background: rgba(10, 10, 10, 0.25) !important; // Very low alpha for transparency
+    backdrop-filter: blur(12px) saturate(160%); // The macOS "Glass" effect
+    border-radius: 0 0 10px 10px; // Rounded bottom to match MacWindow
+    font-family: 'Fira Code', monospace;
+
+    // The actual scrollable content area
+    & > div:first-child {
+        background: transparent !important;
+    }
+
+    .terminal-content {
+      padding: 20px;
+      color: #ffffff;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); // Makes text readable on light wallpapers
+    }
+
+    // Input line styling
+    .terminal-input-area {
+      background: transparent !important;
+      
+      span {
+        color: #00ffcc !important; // Prompt color
+        font-weight: bold;
+      }
+      
+      input {
+        color: #ffffff !important;
+        caret-color: #00ffcc; // Glowing cursor
+      }
+    }
+  }
+
+  // Custom JSX Colors
+  .text-highlight {
+    color: #00ffcc;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(0, 255, 204, 0.4);
+  }
+
+  .text-dim {
+    color: #888888;
+    font-style: italic;
+  }
+}
+
+// Minimalist Scrollbar
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
