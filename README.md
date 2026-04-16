@@ -6,6 +6,12 @@ Instead of traditional scrolling, users explore the portfolio using commands —
 
 ---
 
+## 🌐 Live Demo
+
+[Click for Live Demo](https://macbook-os.netlify.app/)
+
+---
+
 ## 🚀 Features
 
 ### 🖥️ MacOS-Inspired UI
@@ -45,6 +51,10 @@ Instead of traditional scrolling, users explore the portfolio using commands —
 
 MacOS-style desktop with interactive terminal  
 
+<img width="1892" height="975" alt="image" src="https://github.com/user-attachments/assets/b5903142-722a-46dd-a8d7-3824e9e76b26" />
+<img width="1904" height="980" alt="image" src="https://github.com/user-attachments/assets/019354da-7095-4932-82ad-d3f986bdd444" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/04a21701-44aa-478e-a086-a6d21bbb3e87" />
+<img width="1907" height="976" alt="image" src="https://github.com/user-attachments/assets/7ebff252-b79a-4ed6-90f7-a9e1f0776643" />
 
 
 ---
@@ -142,11 +152,6 @@ Used glassmorphism, subtle shadows, and consistent spacing.
 
 ---
 
-## 🌐 Live Demo
-
-[Click for Live Demo](https://macbook-os.netlify.app/)
-
----
 
 ## 📬 Contact
 
