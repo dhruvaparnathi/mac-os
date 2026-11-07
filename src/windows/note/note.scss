@@ -1,0 +1,109 @@
+.note-window-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: #141416;
+  color: #fff;
+  overflow: hidden;
+}
+
+.note-tab-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 14px 0 14px;
+  background: rgba(28, 28, 32, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+  gap: 10px;
+
+  .tabs-list {
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+  }
+
+  .note-tab-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.04);
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.65);
+    padding: 7px 14px;
+    border-radius: 6px 6px 0 0;
+    font-size: 12px;
+    font-family: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s, color 0.15s;
+
+    .tab-icon {
+      opacity: 0.7;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+    }
+
+    &.active {
+      background: #141416;
+      color: #00ffcc;
+      font-weight: 500;
+      border-top: 2px solid #007aff;
+
+      .tab-icon {
+        color: #00ffcc;
+        opacity: 1;
+      }
+    }
+  }
+
+  .copy-btn {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 11.5px;
+    padding: 5px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 4px;
+    flex-shrink: 0;
+    transition: background 0.15s;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.16);
+      color: #fff;
+    }
+  }
+}
+
+.note-code-viewport {
+  flex: 1;
+  overflow-y: auto;
+  background: #141416;
+}
+
+.note-footer-bar {
+  height: 26px;
+  background: rgba(24, 24, 28, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.45);
+  flex-shrink: 0;
+
+  .synced-badge {
+    color: #34c759;
+    font-weight: 500;
+  }
+}

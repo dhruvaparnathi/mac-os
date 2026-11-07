@@ -1,0 +1,580 @@
+.pdf-window-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: #141416;
+  color: #fff;
+  overflow: hidden;
+}
+
+.pdf-toolbar {
+  height: 44px;
+  background: rgba(30, 30, 35, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  gap: 10px;
+  flex-shrink: 0;
+
+  .pdf-meta {
+    display: flex;
+    flex-direction: column;
+
+    .pdf-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .pdf-size {
+      font-size: 10.5px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .view-mode-tabs {
+    display: flex;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 2px;
+
+    .view-mode-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: transparent;
+      border: none;
+      color: rgba(255, 255, 255, 0.65);
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 11.5px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+
+      &:hover {
+        color: #fff;
+      }
+
+      &.active {
+        background: rgba(255, 255, 255, 0.16);
+        color: #fff;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .pdf-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .pdf-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.15s;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.16);
+      }
+
+      &.primary {
+        background: #007aff;
+        border-color: #007aff;
+
+        &:hover {
+          background: #0066d6;
+        }
+
+        &:disabled {
+          opacity: 0.6;
+          cursor: wait;
+        }
+      }
+
+      &.secondary {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.14);
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.16);
+          color: #64d2ff;
+        }
+      }
+
+      &.print-btn {
+        background: rgba(52, 199, 89, 0.15);
+        border-color: rgba(52, 199, 89, 0.35);
+        color: #34c759;
+
+        &:hover {
+          background: rgba(52, 199, 89, 0.25);
+          color: #fff;
+        }
+      }
+
+      &.icon-only {
+        padding: 6px 8px;
+      }
+    }
+  }
+}
+
+.download-notice-banner {
+  background: rgba(0, 122, 255, 0.2);
+  border-bottom: 1px solid rgba(0, 122, 255, 0.4);
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #fff;
+  animation: slideDownNotice 0.2s ease-out;
+
+  span {
+    flex: 1;
+
+    strong {
+      color: #64d2ff;
+    }
+  }
+
+  .close-notice-btn {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 4px;
+    line-height: 1;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+@keyframes slideDownNotice {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pdf-view-frame {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background: #202024;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .pdf-info-banner {
+    background: rgba(0, 122, 255, 0.15);
+    border-bottom: 1px solid rgba(0, 122, 255, 0.3);
+    padding: 6px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11.5px;
+    color: rgba(255, 255, 255, 0.9);
+    flex-shrink: 0;
+    gap: 10px;
+
+    .banner-actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-shrink: 0;
+
+      .banner-link-btn {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: #fff;
+        padding: 4px 10px;
+        border-radius: 5px;
+        font-size: 11.5px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background 0.15s;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.2);
+        }
+
+        &.primary {
+          background: #007aff;
+          border-color: #007aff;
+
+          &:hover {
+            background: #0066d6;
+          }
+        }
+      }
+    }
+  }
+
+  .pdf-object, .pdf-iframe {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+
+  .pdf-fallback-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    gap: 12px;
+    color: #fff;
+
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.65);
+      max-width: 480px;
+      line-height: 1.5;
+    }
+
+    .fallback-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 8px;
+
+      .fallback-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 16px;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        text-decoration: none;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.08);
+        color: #fff;
+        transition: background 0.15s;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.15);
+        }
+
+        &.primary {
+          background: #007aff;
+          border-color: #007aff;
+
+          &:hover {
+            background: #0066d6;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Digital Interactive Resume Styling */
+.digital-resume-container {
+  flex: 1;
+  overflow-y: auto;
+  background: #18181c;
+  padding: 24px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.digital-resume-page {
+  width: 100%;
+  max-width: 680px;
+  background: #1f1f24;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  color: #fff;
+
+  .resume-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding-bottom: 16px;
+
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.02em;
+    }
+
+    .resume-contact {
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-top: 4px;
+
+      a {
+        color: #64d2ff;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .resume-links {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-top: 6px;
+      font-size: 12px;
+
+      a {
+        color: #007aff;
+        text-decoration: none;
+        font-weight: 500;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      span {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+
+  .resume-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h2 {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: #00ffcc;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 4px;
+    }
+
+    .summary-text {
+      font-size: 13px;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.85);
+    }
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .skill-category {
+      font-size: 12.5px;
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.8);
+
+      .skill-cat-title {
+        font-weight: 600;
+        color: #fff;
+        margin-right: 6px;
+      }
+    }
+  }
+
+  .resume-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 6px;
+
+    .item-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+
+      h3 {
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+      }
+
+      .item-date {
+        font-size: 11.5px;
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    .item-tech {
+      font-size: 11.5px;
+      color: #64d2ff;
+      font-style: italic;
+    }
+
+    .item-bullets {
+      padding-left: 18px;
+      margin-top: 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+
+      li {
+        font-size: 12.5px;
+        line-height: 1.45;
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+
+    .cert-list {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.8);
+      margin-top: 4px;
+    }
+  }
+}
+
+/* Print / Save as PDF Stylesheet */
+@media print {
+  /* Hide the rest of the macOS UI when printing */
+  .macos-navbar,
+  .macos-dock-container,
+  .desktop-icons-container,
+  .pdf-toolbar,
+  .download-notice-banner,
+  .mac-window-titlebar,
+  .mac-window-controls {
+    display: none !important;
+  }
+
+  body, html {
+    background: #fff !important;
+    color: #111 !important;
+  }
+
+  .mac-window {
+    position: static !important;
+    transform: none !important;
+    width: 100% !important;
+    height: auto !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: #fff !important;
+  }
+
+  .pdf-window-wrapper,
+  .digital-resume-container {
+    background: #fff !important;
+    padding: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .digital-resume-page {
+    background: #fff !important;
+    color: #111 !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+
+    .resume-header {
+      border-bottom-color: #ddd !important;
+
+      h1 {
+        color: #000 !important;
+      }
+
+      .resume-contact {
+        color: #444 !important;
+
+        a {
+          color: #0066cc !important;
+        }
+      }
+
+      .resume-links a {
+        color: #0066cc !important;
+      }
+    }
+
+    .resume-section {
+      h2 {
+        color: #0066cc !important;
+        border-bottom-color: #eee !important;
+      }
+
+      .summary-text {
+        color: #222 !important;
+      }
+    }
+
+    .skills-grid .skill-category {
+      color: #333 !important;
+
+      .skill-cat-title {
+        color: #000 !important;
+      }
+    }
+
+    .resume-item {
+      .item-heading {
+        h3 {
+          color: #000 !important;
+        }
+        .item-date {
+          color: #666 !important;
+        }
+      }
+
+      .item-tech {
+        color: #555 !important;
+      }
+
+      .item-bullets li {
+        color: #222 !important;
+      }
+
+      .cert-list {
+        color: #333 !important;
+      }
+    }
+  }
+}

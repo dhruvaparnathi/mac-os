@@ -1,48 +1,83 @@
 [
-    {
-        "id": 1,
-        "image": "https://images.unsplash.com/photo-1717632463998-dc3ee6717d8d?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "title": "Mac - Operating System",
-        "description": "Mac Operating System demo for Portfolio that has Github, Terminal, Spotify, Calender, etc...",
-        "tags": ["React", "Rnd" ,"JavaScript", "SCSS"],
-        "repoLink": "https://github.com/dhruvaparnathi/mac-os",
-        "demoLink": ""
-    },
-    {
-      "id": 2,
-      "image": "https://images.unsplash.com/photo-1651055693398-0d66969cf759?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "title": "Transact - Finance Tracker",
-      "description": "A modern finance tracking web app built with React. Allows users to add, delete, and track expenses with local storage support and clean UI.",
-      "tags": ["React", "UseContext", "FormHandling" ,"JavaScript", "TailwindCSS", "LocalStorage"],
-      "repoLink": "https://github.com/dhruvaparnathi/transact",
-      "demoLink": "https://transact-your-transactions.netlify.app/"
-    },
-    {
-        "id": 3,
-        "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "title": "How I Learned React",
-        "description": "Contains mini-projects and web-designs that I made during my react journey.",
-        "tags": ["React", "JavaScript", "TailwindCSS", "useState", "useEffect"],
-        "repoLink": "https://github.com/dhruvaparnathi/How_i_Learned_React",
-        "demoLink": ""
-    },
-    {
-        "id": 4,
-        "image": "https://plus.unsplash.com/premium_photo-1722207562226-6f7c8125c13b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "title": "Productivity Web App",
-        "description": "Productivity app that supports draggable ToDo, daily planning, motivation, pomodoro timer, etc...",
-        "tags": ["JavaScript", "CSS" , "HTML"],
-        "repoLink": "https://github.com/dhruvaparnathi/productivity-web-app",
-        "demoLink": "https://productivity-site-app.netlify.app/"
-    },
-    {
-        "id": 5,
-        "image": "https://images.unsplash.com/photo-1545424273-4dd93a233016?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "title": "Image Filterer",
-        "description": "Helps you Edit image via filtering it in different forms.",
-        "tags": ["JavaScript", "Canvas" , "Filter" ,"CSS" , "HTML"],
-        "repoLink": "https://github.com/dhruvaparnathi/image-filterer",
-        "demoLink": "https://image-filterer.netlify.app/"
-    }
-
+  {
+    "id": 1,
+    "image": "https://media.istockphoto.com/id/1521866387/photo/3d-render-of-shopping-sale-promotion-banner-online-full-shopping-cart-on-podium-with-shopping.webp?a=1&b=1&s=612x612&w=0&k=20&c=UG4UTNXQ0Onl07hl-c6zDiRW7Fsl8ojtYz1qdlvXppM=",
+    "title": "Snitch - Architectural Commerce",
+    "description": "An end-to-end, neo-brutalist e-commerce storefront and creator marketplace featuring smooth scrolling, Google OAuth 2.0, cloud media pipelines, and Razorpay checkout.",
+    "tags": ["React", "Vite", "TailwindCSS", "Redux Toolkit", "Node.js", "Express", "MongoDB", "Razorpay"],
+    "repoLink": "https://github.com/dhruvaparnathi/Snitch",
+    "demoLink": "https://snitch-cart.vercel.app/"
+  },
+  {
+    "id": 2,
+    "image": "https://plus.unsplash.com/premium_photo-1725985758251-b49c6b581d17?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "title": "Pax AI - Search & Q&A Engine",
+    "description": "A real-time AI-powered search and Q&A engine designed to cut through web noise and deliver clean, structured, and factual answers.",
+    "tags": ["React", "Vite", "Node.js", "Express", "MongoDB", "LangChain", "Gemini API", "Socket.io", "TailwindCSS"],
+    "repoLink": "https://github.com/dhruvaparnathi/Pax-AI",
+    "demoLink": "https://paxai.onrender.com"
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1741719409289-9e04bfda9887?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "title": "Moodify - Emotion Music Recommender",
+    "description": "AI-powered facial emotion music recommender that uses webcam facial landmark analysis to detect your current mood and unlock curated Spotify playlists.",
+    "tags": ["JavaScript", "Face-api.js", "TensorFlow.js", "Spotify API", "WebRTC", "HTML5", "CSS3"],
+    "repoLink": "https://github.com/dhruvaparnathi/Moodify",
+    "demoLink": "https://app-moodify.onrender.com/"
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1779493015876-bf5fe2477b34?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+    "title": "AI Battle Arena",
+    "description": "Real-time multi-LLM benchmark and evaluation arena powered by LangGraph, pitting top AI models head-to-head with automated referee evaluation and scoring.",
+    "tags": ["React", "TypeScript", "LangGraph", "LangChain", "TailwindCSS", "Node.js", "Express", "Gemini API"],
+    "repoLink": "https://github.com/dhruvaparnathi/AI_Battle_Arena",
+    "demoLink": "https://ai-battlearena.netlify.app/"
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1717632463998-dc3ee6717d8d?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Mac - Operating System",
+    "description": "Mac Operating System demo for Portfolio that has Github, Terminal, Spotify, Calender, etc...",
+    "tags": ["React", "Rnd", "JavaScript", "SCSS"],
+    "repoLink": "https://github.com/dhruvaparnathi/mac-os",
+    "demoLink": ""
+  },
+  {
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1651055693398-0d66969cf759?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Transact - Finance Tracker",
+    "description": "A modern finance tracking web app built with React. Allows users to add, delete, and track expenses with local storage support and clean UI.",
+    "tags": ["React", "UseContext", "FormHandling", "JavaScript", "TailwindCSS", "LocalStorage"],
+    "repoLink": "https://github.com/dhruvaparnathi/transact",
+    "demoLink": "https://transact-your-transactions.netlify.app/"
+  },
+  {
+    "id": 7,
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "How I Learned React",
+    "description": "Contains mini-projects and web-designs that I made during my react journey.",
+    "tags": ["React", "JavaScript", "TailwindCSS", "useState", "useEffect"],
+    "repoLink": "https://github.com/dhruvaparnathi/How_i_Learned_React",
+    "demoLink": ""
+  },
+  {
+    "id": 8,
+    "image": "https://plus.unsplash.com/premium_photo-1722207562226-6f7c8125c13b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Productivity Web App",
+    "description": "Productivity app that supports draggable ToDo, daily planning, motivation, pomodoro timer, etc...",
+    "tags": ["JavaScript", "CSS", "HTML"],
+    "repoLink": "https://github.com/dhruvaparnathi/productivity-web-app",
+    "demoLink": "https://productivity-site-app.netlify.app/"
+  },
+  {
+    "id": 9,
+    "image": "https://images.unsplash.com/photo-1545424273-4dd93a233016?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Image Filterer",
+    "description": "Helps you Edit image via filtering it in different forms.",
+    "tags": ["JavaScript", "Canvas", "Filter", "CSS", "HTML"],
+    "repoLink": "https://github.com/dhruvaparnathi/image-filterer",
+    "demoLink": "https://image-filterer.netlify.app/"
+  }
 ]

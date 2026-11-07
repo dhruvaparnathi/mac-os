@@ -1,99 +1,189 @@
 /**
  * @file: profile.config.ts
- * @author: Engineering Portfolio
- * @summary: A high-performance full-stack engineer.
+ * @author: Dhruv Aparnathi (dhruv.aparnathi.1@gmail.com)
+ * @location: Porbandar, Gujarat, India
+ * @portfolio: https://macbook-os.netlify.app/
+ * @summary: Self-driven MERN Stack Developer & Frontend Architect.
  */
 
 // --------------------------------------------------
-// 1. CORE DEPENDENCIES & SKILLS
+// 1. CORE TECHNICAL COMPETENCIES
 // --------------------------------------------------
 
-const TECH_STACK = {
-  frontend: [
-    "React.js",    // 100%
-    "Next.js",     // 65%
-    "TailwindCSS", // 90%
-    "Three.js",    // 40%
-  ],
-  backend: [
-    "Node.js",     // 20%
-    "PostgreSQL",  // 25%
-    "Redis",       // 25%
-    "Docker",      // 20%
-  ],
-  tools: ["AWS", "Git", "Figma", "Linux"]
+export const TECH_STACK = {
+  frontend: {
+    frameworks: ["React 19", "ReactJS", "Vite", "Redux Toolkit"],
+    styling: ["Tailwind CSS v4", "SCSS", "CSS3", "HTML5"],
+    animations: ["GSAP (Kinetic Stagger)", "Lenis Inertia Scrolling"],
+    languages: ["TypeScript", "JavaScript (ES6+)"],
+  },
+  backend: {
+    runtime: ["Node.js", "Express.js"],
+    databases: ["MongoDB", "Mongoose ODM", "Redis Caching"],
+    realtime_auth: ["Socket.io", "JWT Sessions (HttpOnly)", "Passport.js", "Google OAuth 2.0"],
+    security_payments: ["Razorpay (HMAC-SHA256 Verification)", "RBAC Guards"],
+  },
+  ai_and_integrations: {
+    orchestration: ["LangChain", "RAG (Retrieval-Augmented Generation)", "LangGraph"],
+    llm_models: ["Google Gemini API", "Mistral AI"],
+    vision_audio: ["@mediapipe/tasks-vision", "ElevenLabs (TTS)", "TensorFlow.js"],
+    apis_services: ["Tavily Search API", "ImageKit CDN", "Brevo SMTP API"],
+  },
+  developer_tooling: ["Git", "GitHub", "Postman", "Linux", "Vercel", "Netlify"],
 };
 
 // --------------------------------------------------
-// 2. EXPERIENCE LOG (Reverse Chronological)
+// 2. PRODUCTION PROJECT ARCHITECTURES
 // --------------------------------------------------
 
-class ProfessionalHistory {
-  
-  /** * CURRENT ROLE
-   * @period 2023 - Present 
-   */
-  public async TechFlow_Systems(): Promise<Impact> {
-    const role = "Self Assisted Full-Stack Engineer";
-    
-    // Key Achievements
-    const optimized = await view.optimize({ strategy: "Lazy Loading" });
-    const latencyReduction = "40%";
-    
-    const leadership = this.mentor(["me"]);
-    const architecture = "self architect -> Support View";
-    
-    return { role, optimized, architecture, leadership };
-  }
-
-  /** * PREVIOUS ROLE
-   * @period 2021 - 2023 => No Role/was Learning.
-   */
-  
+export interface ProjectBlueprint {
+  name: string;
+  category: "Full-Stack E-Commerce" | "AI / Vision" | "AI Search / RAG" | "Systems UI";
+  status: "Production Deployed";
+  technologies: string[];
+  keyArchitectures: string[];
+  links: { repo: string; live: string };
 }
 
+export const FEATURED_PROJECTS: Record<string, ProjectBlueprint> = {
+  Snitch: {
+    name: "Snitch — Architectural Commerce & Creator Marketplace",
+    category: "Full-Stack E-Commerce",
+    status: "Production Deployed",
+    technologies: [
+      "React 19", "Tailwind CSS v4", "Redux Toolkit", "Node.js",
+      "Express.js", "MongoDB", "Razorpay", "ImageKit", "Passport.js", "GSAP", "Lenis"
+    ],
+    keyArchitectures: [
+      "Dynamic multi-attribute variant matrix and real-time inventory validation",
+      "Cryptographic Razorpay checkout with HMAC-SHA256 webhook signature verification",
+      "Google OAuth 2.0 dynamic origin resolution with cross-domain HttpOnly cookies",
+      "Buffered media uploads to ImageKit CDN and kinetic GSAP stagger animations",
+    ],
+    links: {
+      repo: "https://github.com/dhruvaparnathi/Snitch",
+      live: "https://snitch-cart.vercel.app/",
+    },
+  },
+
+  Pax_AI: {
+    name: "Pax AI — Real-Time AI Search & Q&A Engine",
+    category: "AI Search / RAG",
+    status: "Production Deployed",
+    technologies: [
+      "React 19", "Tailwind CSS v4", "Node.js", "Express.js",
+      "MongoDB", "Socket.io", "LangChain", "Google Gemini API", "Tavily API", "ElevenLabs"
+    ],
+    keyArchitectures: [
+      "RAG pipeline using Tavily Search API to synthesize live web data into cited answers",
+      "LangChain integration to switch seamlessly between Google Gemini and Mistral AI models",
+      "Low-latency token streaming and bidirectional communication via Socket.io",
+      "ElevenLabs high-fidelity text-to-speech audio synthesis and ImageKit attachments",
+    ],
+    links: {
+      repo: "https://github.com/dhruvaparnathi/Pax-AI",
+      live: "https://paxai.onrender.com/",
+    },
+  },
+
+  Moodify: {
+    name: "Moodify — AI-Powered Facial Emotion Music Recommender",
+    category: "AI / Vision",
+    status: "Production Deployed",
+    technologies: [
+      "React", "Vite", "Node.js", "Express.js", "MongoDB",
+      "Redis", "GSAP", "@mediapipe/tasks-vision", "Brevo SMTP API", "ImageKit"
+    ],
+    keyArchitectures: [
+      "Client-side webcam emotion classification (6 primary moods) via @mediapipe/tasks-vision",
+      "Custom VibePlayer audio turntable engine with GSAP vinyl rotation and track queue",
+      "Secured endpoints with JWT sessions, email OTP verification via Brevo, and Redis caching",
+      "Bulk audio uploads with automated ID3 metadata parsing and ImageKit cloud storage",
+    ],
+    links: {
+      repo: "https://github.com/dhruvaparnathi/Moodify",
+      live: "https://app-moodify.onrender.com/",
+    },
+  },
+
+  MacOS_Portfolio: {
+    name: "Mac-OS Portfolio Simulation",
+    category: "Systems UI",
+    status: "Production Deployed",
+    technologies: ["React 19", "SCSS", "react-rnd", "react-console-emulator", "TailwindCSS"],
+    keyArchitectures: [
+      "Dynamic Z-index window stacking engine with minimize/maximize and traffic light controls",
+      "Full simulated filesystem for Finder and Desktop shortcut launching",
+      "Interactive Terminal CLI with programmatic app controls and ASCII branding",
+      "Custom Web Audio API synthesizer for native sound effects and volume synchronization",
+    ],
+    links: {
+      repo: "https://github.com/dhruvaparnathi/mac-os",
+      live: "https://macbook-os.netlify.app/",
+    },
+  },
+};
+
 // --------------------------------------------------
-// 3. COMPETITIVE ACHIEVEMENTS
+// 3. PROFESSIONAL TIMELINE & EXPERIENCE
 // --------------------------------------------------
 
-interface HackathonWin {
-  rank: number;
-  event: string;
-  project: string;
-}
-
-const trophyCabinet: HackathonWin[] = [
+export const EXPERIENCE_LOG = [
   {
-    rank: -,
-    event: "Google Arcade Skill Boost",
-    project: "Learn Google Cloud",
+    role: "Self-Directed MERN Stack Developer",
+    period: "2024 - Present",
+    focus: [
+      "Engineered end-to-end full-stack architectures through continuous hands-on builds",
+      "Developed reusable React components, robust REST APIs, and responsive UI systems",
+      "Architected complex MongoDB schemas, aggregations, and CRUD pipelines",
+      "Mastered state management, performance optimization, and API security guards",
+    ],
   },
   {
-    rank: 500, // Top 500 Global
-    event: "Hackathon Vadodra 6.0",
-    project: "Language Agnostic Chatbot (Dynamic Programming)",
-  }
+    role: "Full-Stack Cohort 2.0 (Sheryians Coding School)",
+    period: "Ongoing",
+    focus: [
+      "Advanced backend architecture, middleware structuring, and database workflows",
+      "Production deployment pipelines, authentication systems, and cloud CDN setups",
+    ],
+  },
+  {
+    role: "How_I_Learned | React Learning Journey",
+    period: "Ongoing",
+    focus: [
+      "Built and deployed 10+ frontend and full-stack projects to master React ecosystems",
+      "Deep exploration of hooks, render lifecycles, and micro-interactions",
+    ],
+  },
 ];
 
 // --------------------------------------------------
-// 4. ACADEMIC BACKGROUND
+// 4. EDUCATION & CERTIFICATIONS
 // --------------------------------------------------
 
-const education = new Map<string, string>([
-  ["Parul University", "B.Tech Computer Science & Engineering (7.3 CGPA)"],
-  ["SIGMA English School", "12th GSEB (66.7%)"]
-  ["EDU-World Global English School", "10th GSEB (87%)"]
-]);
+export const EDUCATION = {
+  degree: "B.Tech in Computer Science & Engineering",
+  institution: "Parul University",
+  graduation: "Expected 2027",
+  cgpa: "7.4 / 10.0",
+  coursework: [
+    "Data Structures & Algorithms",
+    "Object-Oriented Programming",
+    "Database Management Systems (DBMS)",
+    "Operating Systems",
+    "Web Development",
+  ],
+};
 
-export default new ProfessionalHistory();
+export const CERTIFICATIONS = [
+  "Prompt Engineering — Sololearn (Cert: CC-6FSZUKYO)",
+  "Frontend Development — Sololearn (Cert: CC-I6PBRXOU)",
+  "Web Development — Sololearn (Cert: CC-VRRK9RRO)",
+  "Hackathon Vadodara 6.0 — Top 500 Global Participation",
+];
 
-
-```bash
-# TERMINAL OUTPUT
-# ---------------------------------------
-$ user --status
-> Status: Open to Opportunities
-> Location: Global / Remote
-> Loading Assets... [||||||||||] 100%
-> Ready.
-```
+export default {
+  developer: "Dhruv Aparnathi",
+  openToRoles: ["Full-Stack Engineer", "Frontend Developer", "MERN Developer"],
+  status: "ONLINE & Open for Opportunities",
+};

@@ -1,0 +1,49 @@
+.cli-container {
+  height: 100%;
+  width: 100%;
+  background: rgba(14, 14, 18, 0.96);
+
+  .custom-terminal {
+    background: transparent !important;
+    font-family: 'Fira Code', 'Cascadia Code', Menlo, Monaco, Consolas, monospace;
+    font-size: 13px;
+    height: 100% !important;
+
+    & > div:first-child {
+      background: transparent !important;
+      padding: 14px 18px;
+    }
+
+    .terminal-content {
+      color: #ffffff;
+      line-height: 1.5;
+    }
+
+    .terminal-input-area {
+      background: transparent !important;
+      padding-top: 4px;
+
+      span {
+        color: #00ffcc !important;
+        font-weight: 600;
+      }
+
+      input {
+        color: #ffffff !important;
+        caret-color: #00ffcc;
+        font-family: inherit;
+      }
+    }
+  }
+
+  .text-highlight {
+    color: #00ffcc;
+    font-weight: 600;
+  }
+
+  .text-dim {
+    color: #888888;
+    font-style: italic;
+  }
+}
+

@@ -1,0 +1,459 @@
+.mac-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: rgba(20, 20, 24, 0.72);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  z-index: 9999;
+  font-size: 13px;
+  color: #fff;
+  user-select: none;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  position: relative;
+}
+
+.apple-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+
+  &:hover, &.active {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .apple-icon-img {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.nav-app-name {
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+  letter-spacing: -0.01em;
+}
+
+.nav-menu-wrapper {
+  position: relative;
+
+  .nav-menu-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+
+    &:hover, &.active {
+      background: rgba(255, 255, 255, 0.15);
+    }
+  }
+
+  .nav-submenu {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    min-width: 180px;
+    background: rgba(30, 30, 35, 0.94);
+    backdrop-filter: blur(25px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10001;
+
+    button, .submenu-link {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 13px;
+      text-align: left;
+      padding: 6px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &:hover {
+        background: #007aff;
+        color: #fff;
+      }
+    }
+
+    .submenu-divider {
+      height: 1px;
+      background: rgba(255, 255, 255, 0.1);
+      margin: 4px 0;
+    }
+  }
+}
+
+.apple-dropdown-menu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  min-width: 220px;
+  background: rgba(30, 30, 35, 0.94);
+  backdrop-filter: blur(25px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  z-index: 10002;
+
+  .menu-item {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 13px;
+    text-align: left;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+      background: #007aff;
+      color: #fff;
+    }
+
+    .shortcut {
+      font-size: 11px;
+      opacity: 0.6;
+    }
+  }
+
+  .menu-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 4px 0;
+  }
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .tray-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+
+    &:hover, &.active {
+      background: rgba(255, 255, 255, 0.15);
+    }
+  }
+
+  .battery {
+    gap: 5px;
+    .battery-pct {
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+  .datetime-tray {
+    cursor: default;
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  .mac-datetime {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12.5px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.95);
+
+    .time {
+      font-variant-numeric: tabular-nums;
+    }
+  }
+}
+
+/* Control Center Popover */
+.control-center-panel {
+  position: absolute;
+  top: 36px;
+  right: 12px;
+  width: 310px;
+  background: rgba(30, 30, 36, 0.88);
+  backdrop-filter: blur(35px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10003;
+  animation: ccFadeIn 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+
+  .cc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .cc-toggles-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .cc-toggle-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.15s ease;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .cc-icon-btn {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+
+        &.active {
+          background: #007aff;
+        }
+      }
+
+      .cc-toggle-info {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          font-size: 12px;
+          font-weight: 600;
+        }
+
+        .sub {
+          font-size: 10px;
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+  }
+
+  .cc-music-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    transition: background 0.15s ease;
+
+    .music-card-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+
+      .music-icon-wrapper {
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        &.playing {
+          animation: pulseIcon 1.6s ease-in-out infinite;
+        }
+      }
+
+      .music-info {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        .music-title {
+          font-size: 11.5px;
+          font-weight: 600;
+          color: #fff;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .music-artist {
+          font-size: 10px;
+          color: rgba(255, 255, 255, 0.55);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    .music-quick-controls {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 6px;
+
+      .music-ctrl-btn {
+        background: rgba(255, 255, 255, 0.12);
+        border: none;
+        color: #fff;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background 0.15s, transform 0.1s;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.22);
+          transform: scale(1.05);
+        }
+
+        &.play {
+          background: #1db954;
+          color: #000;
+
+          &:hover {
+            background: #1ed760;
+          }
+        }
+      }
+    }
+  }
+
+  .cc-slider-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .slider-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.7);
+      font-weight: 500;
+    }
+
+    .slider-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .mute-btn {
+        background: transparent;
+        border: none;
+        color: #fff;
+        padding: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        .slider-icon {
+          opacity: 0.85;
+          transition: opacity 0.15s;
+
+          &:hover {
+            opacity: 1;
+          }
+
+          &.muted {
+            color: #ff3b30;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mac-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  outline: none;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+}
+
+@keyframes ccFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
